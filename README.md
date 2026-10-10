@@ -6,6 +6,9 @@
 
 | Project | Engineering focus | Start with |
 | --- | --- | --- |
+| [Document Review Workbench](https://github.com/PengdaoJiang/document-review-workbench) | Durable source/blind worker pools, human decisions and fenced document writers | [Application](https://github.com/PengdaoJiang/document-review-workbench#offline-start) |
+| [Long-text Evidence Registry](https://github.com/PengdaoJiang/longtext-evidence-registry) | Transactional extraction, stable entity identity and a React review interface | [Offline workflow](https://github.com/PengdaoJiang/longtext-evidence-registry#run-the-offline-example) |
+| [PCB Geometry Evidence](https://github.com/PengdaoJiang/pcb-geometry-evidence) | Gerber/ODB geometry normalization, directed coverage and manufacturing-data comparison | [Portable geometry kernel](https://github.com/PengdaoJiang/pcb-geometry-evidence) |
 | [Agent Evaluation Evidence Kit](https://github.com/PengdaoJiang/agent-eval-evidence-kit) | Execution traces, paired experiments, resumable runs and failure attribution | [Failure cases](https://github.com/PengdaoJiang/agent-eval-evidence-kit/blob/main/docs/engineering-cases.md) |
 | [Point-in-Time Research](https://github.com/PengdaoJiang/point-in-time-research) | As-of data, research isolation and dependence-aware temporal validation | [Research cases](https://github.com/PengdaoJiang/point-in-time-research/blob/main/docs/case-studies.md) |
 | [Literary Evidence Library](https://github.com/PengdaoJiang/literary-evidence-library) | Source-grounded entities and relations, review lineage and rebuildable SQLite | [Evidence compiler](https://github.com/PengdaoJiang/literary-evidence-library/blob/main/literary/tools/library.py) |
