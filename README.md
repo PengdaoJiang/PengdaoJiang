@@ -1,24 +1,23 @@
-# Engineering Projects
+# Agent and Research Systems
 
-项目目录：Agent 执行评测、时点研究、文学资料工具与 FPGA/DSP 验证。
+Execution, review and reproducible computation for long-running work.
 
-## Selected engineering work
+## Main projects
 
-| Project | Engineering focus | Start with |
+| Project | Central problem | Code and architecture |
 | --- | --- | --- |
-| [Document Review Workbench](https://github.com/PengdaoJiang/document-review-workbench) | Durable source/blind worker pools, human decisions and fenced document writers | [Application](https://github.com/PengdaoJiang/document-review-workbench#offline-start) |
-| [Long-text Evidence Registry](https://github.com/PengdaoJiang/longtext-evidence-registry) | Transactional extraction, stable entity identity and a React review interface | [Offline workflow](https://github.com/PengdaoJiang/longtext-evidence-registry#run-the-offline-example) |
-| [PCB Geometry Evidence](https://github.com/PengdaoJiang/pcb-geometry-evidence) | Gerber/ODB geometry normalization, directed coverage and manufacturing-data comparison | [Portable geometry kernel](https://github.com/PengdaoJiang/pcb-geometry-evidence) |
-| [Agent Evaluation Evidence Kit](https://github.com/PengdaoJiang/agent-eval-evidence-kit) | Execution traces, paired experiments, resumable runs and failure attribution | [Failure cases](https://github.com/PengdaoJiang/agent-eval-evidence-kit/blob/main/docs/engineering-cases.md) |
-| [Point-in-Time Research](https://github.com/PengdaoJiang/point-in-time-research) | As-of data, research isolation and dependence-aware temporal validation | [Research cases](https://github.com/PengdaoJiang/point-in-time-research/blob/main/docs/case-studies.md) |
-| [Literary Evidence Library](https://github.com/PengdaoJiang/literary-evidence-library) | Source-grounded entities and relations, review lineage and rebuildable SQLite | [Evidence compiler](https://github.com/PengdaoJiang/literary-evidence-library/blob/main/literary/tools/library.py) |
-| [Traceable Translation Pipeline](https://github.com/PengdaoJiang/traceable-translation-pipeline) | Immutable source, stable text units, exact patches and upstream-bound review | [Pipeline cases](https://github.com/PengdaoJiang/traceable-translation-pipeline/blob/main/docs/engineering-cases.md) |
-| [Signal Verification Lab](https://github.com/PengdaoJiang/signal-verification-lab) | Framed links, clock-domain boundaries, segmented streaming and numerical verification | [RTL failure cases](https://github.com/PengdaoJiang/signal-verification-lab/blob/main/docs/engineering-cases.md) |
+| [Agent execution and evaluation](https://github.com/PengdaoJiang/agent-eval-evidence-kit) | Recover the correct task, control tool execution, and diagnose failures | [Phase/context control](https://github.com/PengdaoJiang/agent-eval-evidence-kit/blob/main/docs/phase-and-context.md) · [VM execution](https://github.com/PengdaoJiang/agent-eval-evidence-kit/blob/main/docs/vm-execution.md) |
+| [Research review workbench](https://github.com/PengdaoJiang/document-review-workbench) | Keep source coverage, independent review and human decisions coherent through revisions | [Incremental review](https://github.com/PengdaoJiang/document-review-workbench/blob/main/docs/obligation-coverage.md) |
+| [Reproducible experiment runtime](https://github.com/PengdaoJiang/point-in-time-research) | Resume valid compute units and preserve data, code and environment lineage | [Data and event runtime](https://github.com/PengdaoJiang/point-in-time-research/blob/main/docs/data-and-event-runtime.md) |
+| [Versioned workflow state](https://github.com/PengdaoJiang/traceable-translation-pipeline) | Retain source authority and valid review results while recovering derived state | [Storage and recovery](https://github.com/PengdaoJiang/traceable-translation-pipeline/blob/main/docs/versioned-runtime.md) |
 
-Working subsystems with explicit source boundaries and reproducible examples. Each repository distinguishes implementation, generated test evidence and historical observations.
+The repositories contain extracted working implementations with independent entry points. Their guides identify deployment dependencies, synthetic examples and the scope of historical validation.
 
-## Engineering approach
+<details>
+<summary>Focused components</summary>
 
-Examples connect declared inputs, execution traces, failure cases and reproducible outputs. Conclusions are traceable to inputs and code.
+- [Long-text evidence registry](https://github.com/PengdaoJiang/longtext-evidence-registry): transactional extraction, stable entities and a React review interface.
+- [Literary evidence compiler](https://github.com/PengdaoJiang/literary-evidence-library): source-grounded relationships, adjudication lineage and rebuildable SQLite.
+- [Geometry comparison](https://github.com/PengdaoJiang/pcb-geometry-evidence): directed coverage and manufacturing-feature comparison.
 
-中文与 English 项目说明均可从各仓库首页进入。
+</details>
